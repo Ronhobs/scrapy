@@ -53,8 +53,9 @@ jobs:
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v3
       with:
-           files: ./coverage.xml
-           flags: unittests
-           token: ${{ secrets.CODECOV_TOKEN }}  # Only needed if the repo is private
-           name: windows-coverage
-           slug: Ronhobs/scrapy  # Explicitly set the repository slug
+       files: ./coverage.xml
+       flags: unittests
+       token: ${{ secrets.CODECOV_TOKEN }}  # Only needed if the repo is private
+       name: windows-coverage
+       slug: Ronhobs/scrapy  # Explicitly specify the repository slug
+
