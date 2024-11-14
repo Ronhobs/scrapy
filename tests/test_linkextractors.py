@@ -11,7 +11,7 @@ from w3lib import __version__ as w3lib_version
 from scrapy.http import HtmlResponse, XmlResponse
 from scrapy.link import Link
 from scrapy.linkextractors.lxmlhtml import LxmlLinkExtractor
-from tests import get_testdata
+from tests import get_testdata # type: ignore
 
 
 # a hack to skip base class tests in pytest
